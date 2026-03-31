@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Cook with Aleen- Cooking Made Easy</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-utensils"></i> Cook with Aleen
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+        <div class="navbar-right">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search recipes...">
+            </div>
+            <div class="theme-switch">
+                <i class="fas fa-moon moon-icon"></i>
+                <div class="toggle-track">
+                    <div class="toggle-ball"></div>
+                </div>
+                <i class="fas fa-sun sun-icon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="slider-container">
+
+        <div class="slide active slide-1">
+            <div class="slide-content">
+                <span class="slide-tag">Middle Eastern</span>
+                <h1>Flavors of the East</h1>
+                <p>Discover the rich spices and comforting dishes of Middle Eastern cuisine, from creamy hummus to savory kebabs.</p>
+                <button class="action-btn">View Eastern Recipes <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="slide slide-2">
+            <div class="slide-content">
+                <span class="slide-tag">Mexican</span>
+                <h1>Mexican Classics</h1>
+                <p>Spice up your dinner with authentic street tacos, fresh guacamole, and bold smoky salsas.</p>
+                <button class="action-btn">View Mexican Recipes <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="slide slide-3">
+            <div class="slide-content">
+                <span class="slide-tag">Asian</span>
+                <h1>Asian Street Food</h1>
+                <p>Learn how to roll your own sushi and create savory, warm ramen bowls from scratch.</p>
+                <button class="action-btn">View Asian Recipes <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <button id="prevBtn" class="slider-arrow left-arrow"><i class="fas fa-chevron-left"></i></button>
+        <button id="nextBtn" class="slider-arrow right-arrow"><i class="fas fa-chevron-right"></i></button>
+
+        <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </header>
+
+    <section class="category-section">
+        <div class="category-chips">
+            <button class="chip active" data-filter="all"><span>🌍</span> All</button>
+            <button class="chip" data-filter="middle eastern"><span>🥙</span> Middle Eastern</button>
+            <button class="chip" data-filter="mexican"><span>🌮</span> Mexican</button>
+            <button class="chip" data-filter="asian"><span>🍜</span> Asian</button>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="section-header">
+            <h2>Latest Recipes</h2>
+            <a href="#" class="view-all">View all <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="recipe-grid" id="recipeGrid">
+            </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© 2026 Cook with Aleen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
