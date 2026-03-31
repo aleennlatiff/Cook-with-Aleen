@@ -1,5 +1,5 @@
 // =============================================
-//  GLOBAL BITES — app.js
+//  COOKWITHALEEN — app.js
 // =============================================
 
 // --- HERO SLIDER ---
@@ -76,7 +76,8 @@ toggleTrack.addEventListener('click', () => {
 const recipesData = [
     {
         id: 1,
-        title: "Chicken Shawarma"s        category: "middle eastern",
+        title: "Chicken Shawarma",
+         category: "middle eastern",
         categoryDisplay: "Middle Eastern",
         image: "img/chicken-shawerma.jpg",
         difficulty: "easy",
@@ -111,6 +112,7 @@ const recipeGrid = document.getElementById('recipeGrid');
 // Function to display recipes on the webpage
 function displayRecipes(menuItems) {
 
+    // Create HTML structure for every recipe in the array
     let displayMenu = menuItems.map(function(item) {
 
         return `<div class="recipe-card">
